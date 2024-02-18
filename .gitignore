@@ -2,3 +2,4 @@
 *.hpp
 /images/originals
 /images/*.txt
+/images/others

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- <link rel="stylesheet" href="work1.css"> -->
+        <link rel="stylesheet" href="https://latex.now.sh/style.css">
+        <link rel="stylesheet" href="https://latex.now.sh/prism/prism.css">
+    </head>
+    <!-- <body class = "latex-dark"> -->
+    <body id="top">
+        <div class="container">
+            <button type="button" class="btn btn2 btn_work1" onclick="goBack()">Back to Main Page</button>
+            <h1 class="sub-title">Model-Based Design of a YAK-54 Aircraft</h1>
+            <p>The following is an overview of a Model-Based Design for a 1/3rd scale Yakolev 54 aircraft.</p>
+        </div>
+
+        <script>
+            function goBack() {
+                window.history.back(  );
+            }
+        </script>
+
+
+
+        <main>
+            <article>
+                <div>
+                    <h4 id = "proofs-theorems">
+                        Proofs & Theorems
+                    </h4>
+                    <div class = "theorem">
+                        The real numbers $\mathbb{R}$ are uncountable.
+                    </div>
+                    <div class = "proof">
+                        If $\mathbb{R}$ is countable, then [0, 1] is countable as well. Hence
+                        there exists a map C from $\mathbb{N}$ onto [0, 1] with
+                        $$C(n)=\sum_{i=1}^{\infty} c_{i}(n) 10^{-i}$$ where $c_{i}(n)
+                        \in\{0,1, \ldots, 9\},$ are the digits in decimal expansion. Now
+                        consider a real number $$x=\sum_{i=1}^{\infty} \bar{c}_{i} 10^{-i}
+                        \in[0,1]$$ with $\bar{c}_{i} \neq c_{i}(i)$. Obviously $C(n) \neq x$
+                        for all $n \in \mathbb{N} .$ Hence $C$ is not onto. A contradiction.
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <script id = "MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script async src="prism/prism.js"></script>
+        <script src = "https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+        <script async defer data-domain="latex.now.sh" src="https://plausible.io/js/plausible.js"></script>
+    </body>
+</html>
